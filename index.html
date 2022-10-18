@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangara Media</title>
+
+    <link rel="shortcut icon" href="./images/logo/tm_logo.png" type="image/png" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body class="bg-main-gray dark:bg-dark-main">
+      <!-- NAVBAR START -->
+      <nav class="bg-blue-sky dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 border-b border-black dark:border-dark-third">
+        <!-- NAVBAR LEFT START-->
+        <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 py-2 my-2">
+          <!-- LOGO START -->
+          <a href="index.html" class="mr-2 hidden md:inline-block">
+            <img src="./images/logo/iotTM_white.png" alt="IOT TM Loogo" class="w-24 sm:w-20 lg:w-24 h-auto mx-4"/>
+          </a>
+          <a href="index.html" class="inline-block md:hidden">
+            <img src="./images/logo/iotTM_white.png" alt="IOT TM Logo" class="w-32 h-auto" />
+          </a>
+          <!-- LOGO END -->
+        </div>
+        <!-- NAVBAR LEFT END -->
+
+        <!-- NAV CENTER START-->
+        <!-- <div class="flex items-center justify-between space-x-1">
+          <div class="relative bg-gray-100 py-2 w-max h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-32 xl:w-32 flex items-center justify-center cursor-pointer">
+            <input type="text" placeholder="Find Something Here" class="outline-none bg-transparent xl:inline-block" autofocus/>
+            <i class="bx bx-search-alt-2 text-xl dark:text-dark-txt"></i>
+          </div>
+        </div> -->
+        <!-- NAV CENTER END -->
+
+        
+        <ul class="hidden md:flex mx-4 items-center justify-center">
+          <li>
+            <div class="text-xl hidden xl:grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full  p-3 cursor-pointer hover:bg-gray-300 relative">
+              <i class="bx bx-search"></i>
+            </div>
+          </li>  
+          <li>
+            <div class="text-xl grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full p-3 cursor-pointer hover:bg-gray-300 relative">
+              <i class="bx bx-bell"></i>
+              <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+            </div>
+          </li>
+          <li class="h-full hidden xl:flex">
+            <a href="profile.html" class="inline-flex items-center justify-center p-1 rounded-full dark:hover:bg-dark-third mx-2">
+              <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7"/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVBAR END -->
+
+        <!-- Main Content Start -->
+        <div class="flex lg:justify-center h-screen">
+          <!-- Left Content Start-->
+          <div class="w-1/5 pt-16 h-full hidden xl:flex flex-col relative top-0 left-0 bg-blue-sky" id="left-content">
+            <ul class="py-4 pl-4">
+              <li>
+                <a href="#" class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                  <img src="./images/icon/dashboard.png" alt="Dashboard" class="w-10 h-10"/>
+                  <span class="font-semibold text-white text-xl">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                  <img src="./images/icon/customer.png" alt="Customer" class="w-10 h-10"/>
+                  <span class="font-semibold text-white text-xl">Customers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                  <img src="./images/icon/devices.png" alt="Devices" class="w-10 h-10"/>
+                  <div class="font-semibold text-white text-xl">Devices 
+                    <!--  <br> <span class="font-semibold text-sm text-blue-500 justify-between relative">
+                      ● 9+ new videos
+                    </span> -->
+                  </div> 
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                  <img src="./images/icon/entity.png" alt="Entity" class="w-10 h-10"/>
+                  <span class="font-semibold text-white text-xl">Entity</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                  <img src="./images/icon/sensor.png" alt="Sensor" class="w-10 h-10"/>
+                  <span class="font-semibold text-white text-xl">Sensor</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Left Content End -->
+          
+          <!-- Middle Content Start -->
+          <div class="w-4/5 lg:w-4/5 xl:w-4/5 pt-16 lg:pt-16 lg:pr-16 xl:pr-8 px-2 bg-main-gray right-0">
+              <!-- Story Start -->
+              <div class="relative flex space-x-2 pt-4">
+                <div class="w-1/4 sm:w-1/5 h-131 rounded-3xl bg-red-100" >
+                    <div class="h-full w-3/4 group float-left">
+                      <span class="p-4 ml-2font-semibold text-white text-xl">Customers</span>
+                      <span class="p-4 font-bold text-white text-3xl text-left">100000</span>
+                      <br>
+                      <a href="#" class="p-4 hover:underline">View all Customers</a>
+                    </div>
+                    <div class="h-full w-1/4 group bg-red-500 float-right rounded-right-3xl"> 
+                      <img src="./images/icon/customer.png" alt="Customer" class="w-10 h-10"/>
+                    </div>
+                </div>
+
+
+                <!-- <div class="w-1/4 sm:w-1/5 h-44 rounded-xl ">
+                  <div class="relative h-full group cursor-pointer"> 
+                    <img src="./images/story/story2.jpg" alt="Member1 Story" class="group-hover:transform group-hover:scale-110 transition-all duration-700 h-full w-full">
+                    <div class="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                    <span class="absolute bottom-0 left-2 pb-2 font-semibold text-white">Angeline Jolie</span>
+                    <div class="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                      <img src="./images/photos/User/member-1.png" alt="Member1">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-1/4 sm:w-1/5 h-44 rounded-xl">
+                  <div class="relative h-full group cursor-pointer"> 
+                    <img src="./images/story/story3.jpg" alt="Member2 Story" class="group-hover:transform group-hover:scale-110 transition-all duration-700 h-full w-full">
+                    <div class="w-full h-full bg-black absolute top-0 left-0 bg-opacity-10"></div>
+                    <span class="absolute bottom-0 left-2 pb-2 font-semibold text-white">Charles Johnson</span>
+                    <div class="w-10 h-10 rounded-full overflow-hidden absolute top-2 left-2 border-4 border-blue-500">
+                      <img src="./images/photos/User/member-2.png" alt="Member 2">
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <!-- Story End -->
+          </div>
+          <!-- Middle Content End -->
+        </div>
+        <!-- Main Content End -->
+
+    <!-- Javascript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/show.js"></script>
+  </body>
+</html>
+ 

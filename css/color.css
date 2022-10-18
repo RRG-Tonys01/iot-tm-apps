@@ -1,0 +1,63 @@
+/* Background Color Start */
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-light-b {
+    background-color: #e8f4fc;
+}
+
+.bg-main-gray{
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 217, 217, var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.bg-red-100{
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 135, 135, var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.bg-blue-sky{
+    --tw-bg-opacity: 1;
+    background-color: rgba(72, 158, 244, var(--tw-bg-opacity));
+}
+/* Background Color End */

@@ -1,0 +1,22 @@
+.overflow-hidden {
+overflow: hidden;
+}
+
+.overflow-x-scroll{
+overflow-x: scroll;
+}
+
+.overflow-y-scroll{
+overflow-y: scroll;
+}
+
+.scrollbar-width-auto{
+scrollbar-width: auto;
+}
+
+.scrollbar-width-thin{
+scrollbar-width: thin;
+}
+.scrollbar-width-none{
+scrollbar-width: none;
+}

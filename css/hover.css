@@ -1,0 +1,34 @@
+/* Hover Background Start */
+.hover\:bg-gray-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-300:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.hover\:bg-main-gray:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 217, 217, var(--tw-bg-opacity));
+}
+/* Hover Background End */
+
+
+/* Hover Link Start */
+.hover\:underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Hover Link End */

@@ -1,0 +1,59 @@
+
+/* Dark Mode Start*/
+.dark .dark\:bg-dark-main {
+--tw-bg-opacity: 1;
+background-color: rgba(24, 25, 26, var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dark-second {
+--tw-bg-opacity: 1;
+background-color: rgba(36, 37, 38, var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dark-third {
+--tw-bg-opacity: 1;
+background-color: rgba(58, 59, 60, var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dark-fourth {
+--tw-bg-opacity: 1;
+background-color: rgba(78, 79, 80, var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dark-b {
+background-color: #283c54;
+}
+
+.dark .dark\:hover\:bg-dark-second:hover {
+--tw-bg-opacity: 1;
+background-color: rgba(36, 37, 38, var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:bg-dark-third:hover {
+--tw-bg-opacity: 1;
+background-color: rgba(58, 59, 60, var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:bg-dark-fourth:hover {
+--tw-bg-opacity: 1;
+background-color: rgba(78, 79, 80, var(--tw-bg-opacity));
+}
+/* Dark Mode End */
+
+
+/* Border Dark Mode Start */
+.dark .dark\:border-blue-700 {
+--tw-border-opacity: 1;
+border-color: rgba(29, 78, 216, var(--tw-border-opacity));
+}
+
+.dark .dark\:border-dark-second {
+--tw-border-opacity: 1;
+border-color: rgba(36, 37, 38, var(--tw-border-opacity));
+}
+
+.dark .dark\:border-dark-third {
+--tw-border-opacity: 1;
+border-color: rgba(58, 59, 60, var(--tw-border-opacity));
+}
+/* Border Dark Mode End */
