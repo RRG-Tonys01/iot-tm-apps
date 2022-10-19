@@ -323,6 +323,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-end{
+  justify-content: end;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -345,10 +349,6 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
-
-
-
 
 * {
   --tw-shadow: 0 0 #0000;

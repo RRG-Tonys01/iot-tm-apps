@@ -3,6 +3,13 @@
 margin: auto;
 }
 
+.m-2 {
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
 /* Margin X-Axis */
 .mx-1 {
 margin-left: 0.25rem;
@@ -34,7 +41,15 @@ margin-top: 1rem;
 margin-bottom: 1rem;
 }
 
+.my-8 {
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
 /* Margin Top */
+.mt-1 {
+margin-top: 0.25rem;
+}
 .mt-2 {
 margin-top: 0.5rem;
 }
@@ -80,15 +95,21 @@ margin-right: 2rem;
 }
 
 /* Margin Left */
-.ml-2 {
-margin-left: 0.5rem;
-}
-
-.ml-4 {
-margin-left: 1rem;
-}
-
 .-ml-1 {
 margin-left: -0.25rem;
 }
+.ml-2 {
+margin-left: 0.5rem;
+}
+.ml-4 {
+margin-left: 1rem;
+}
+.ml-6 {
+margin-left: 1.5rem;
+}
+.ml-8 {
+margin-left: 2rem;
+}
+    
+
 

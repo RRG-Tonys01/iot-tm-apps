@@ -20,3 +20,25 @@ scrollbar-width: thin;
 .scrollbar-width-none{
 scrollbar-width: none;
 }
+
+.scrollbar-style-none{
+-ms-overflow-style: none; /* Internet Explorer 10+ */
+scrollbar-width: none; /* Firefox */
+}
+
+/* Base on ID */
+#body-content-desktop-view::-webkit-scrollbar{
+    display: none;
+}
+
+/* #customer-pop-up-desktop-view::-webkit-scrollbar{
+    display: none;
+} */
+
+#customer-pop-up-sub-header-desktop-view::-webkit-scrollbar{
+    display: none;
+}
+
+#customer-details-pop-up-desktop-view::-webkit-scrollbar{
+    display: none;
+}

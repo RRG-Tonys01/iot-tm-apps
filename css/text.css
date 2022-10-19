@@ -50,6 +50,8 @@ text-align: center;
 text-align: justify;
 }
 
+
+/* Text Color Start */
 .text-black {
 --tw-text-opacity: 1;
 color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -90,12 +92,19 @@ color: rgba(245, 158, 11, var(--tw-text-opacity));
 color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 
+.text-blue-100{
+--tw-bg-opacity: 1;
+color: rgba(135, 214, 239, var(--tw-bg-opacity));
+}
+
+
 .text-blue-500 {
 --tw-text-opacity: 1;
-color: rgba(59, 130, 246, var(--tw-text-opacity));
+color: rgba(0, 41, 255, var(--tw-text-opacity));
 }
 
 .text-purple-500 {
 --tw-text-opacity: 1;
 color: rgba(139, 92, 246, var(--tw-text-opacity));
 }
+/* Text Color End */

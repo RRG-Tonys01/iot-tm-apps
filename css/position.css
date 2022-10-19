@@ -31,6 +31,9 @@ height: 2.5rem;
 height: 3rem;
 }
 
+.h-13 {
+width: 3.125rem; /* 50px */
+}
 .h-16 {
 height: 4rem;
 }
@@ -42,6 +45,11 @@ height: 5.5rem;
 .h-44 {
 height: 11rem;
 }
+
+.h-110{
+height: 6,875rem;
+}
+
 
 .h-131{
 height: 8,1875rem;
@@ -72,6 +80,9 @@ height: 100vh;
 
 
 /* Width */
+.w-auto{
+width: auto;
+}
 .w-4 {
 width: 1rem;
 }
@@ -108,6 +119,10 @@ width: 2.5rem;
 width: 3rem;
 }
 
+.w-13 {
+width: 3.125rem; /* 50px */
+}
+
 .w-16 {
 width: 4rem;
 }
@@ -118,6 +133,11 @@ width: 5.5rem;
 
 .w-24 {
 width: 6rem;
+}
+
+
+.w-472 {
+width: 29.5rem;
 }
 
 .w-2\/3 {
@@ -187,6 +207,14 @@ top: 0.5rem;
 top: -1.25rem;
 }
 
+.top-1\/5 {
+top: 8%;
+}
+
+.top-1\/4 {
+top: 25%;
+}
+
 .top-1\/2 {
 top: 50%;
 }
@@ -211,6 +239,7 @@ bottom: 75%;
 
 
 /* Right */
+
 .right-0 {
 right: 0px;
 }
