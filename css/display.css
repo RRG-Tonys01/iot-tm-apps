@@ -1,35 +1,33 @@
 /* Display Start */
 .block {
-display: block;
+    display: block;
 }
 
 .inline-block {
-display: inline-block;
+    display: inline-block;
 }
 
 .flex {
-display: flex;
+    display: flex;
 }
 
 .inline-flex {
-display: inline-flex;
+    display: inline-flex;
 }
 
 .table {
-display: table;
+    display: table;
 }
 
 .grid {
-display: grid;
+    display: grid;
 }
 
 .hidden {
-display: none;
+    display: none;
 }
 
 .group:hover .group-hover\:inline-block {
-display: inline-block;
+    display: inline-block;
 }
-
-
 /* Display End */

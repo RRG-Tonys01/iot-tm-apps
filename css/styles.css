@@ -4,9 +4,11 @@
 @import 'display.css';
 @import 'font.css';
 @import 'hover.css';
+@import 'keyframes.css';
 @import 'margin.css';
 @import 'overflow.css';
 @import 'padding.css';
 @import 'position.css';
+@import 'responsive.css';
 @import 'tailwind.css';
 @import 'text.css';

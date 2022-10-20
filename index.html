@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tangara Media</title>
+    <title>IOT Application</title>
 
     <link rel="shortcut icon" href="./images/logo/tm_logo.png" type="image/png" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body class="bg-main-gray dark:bg-dark-main">
+  <body class="bg-main-gray">
       <!-- Navbar Header Start -->
-      <nav class="bg-blue-sky dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 dark:border-dark-third">
+      <nav 
+        class="bg-blue-sky h-max w-full fixed top-0 z-50 shadow flex flex-col items-center justify-center md:flex-row md:h-14 md:justify-between sm:"
+      >
         <!-- Navbar Header Left Content Start-->
         <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 my-2">
           <!-- Logo Start -->
@@ -25,15 +27,6 @@
           <!-- Logo End -->
         </div>
         <!-- Navbar Header Left Content End-->
-
-        <!-- NAV CENTER START-->
-        <!-- <div class="flex items-center justify-between space-x-1">
-          <div class="relative bg-gray-100 py-2 w-max h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-32 xl:w-32 flex items-center justify-center cursor-pointer">
-            <input type="text" placeholder="Find Something Here" class="outline-none bg-transparent xl:inline-block" autofocus/>
-            <i class="bx bx-search-alt-2 text-xl dark:text-dark-txt"></i>
-          </div>
-        </div> -->
-        <!-- NAV CENTER END -->
 
         <!-- Navbar Header Right Content Start-->
         <ul class="hidden md:flex mx-4 items-center justify-center">
@@ -197,7 +190,7 @@
               <div class="w-1/2 rounded-3xl mx-2">
                 <div class="flex justify-between">
                   <span class="p-2 text-3xl font-semibold">Customers</span>
-                  <a class="pt-6 px-2 text-sm font-medium">See all</a>
+                  <a class="pt-6 px-2 text-sm font-medium hover:underline hover:text-blue-500 cursor-pointer">See all</a>
                 </div>
                 <!-- Data Customers Start -->
                 <div class="border border-black rounded-3xl bg-white">
@@ -283,80 +276,73 @@
                 </div>
                 <!-- Data Device Status Start -->
                 <div class="border border-black rounded-3xl bg-white">
-                  <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
-                    <div class="flex flex-col w-full ml-2 justify-center">
-                      <div class="flex justify-between">
-                        <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
-                      </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
-                    </div>
-                  </div>
+                  <!-- No Devices Problem -->
+                  <!-- <span class="text-center items-center text-xl font-semibold p-6">There is no Devices Problem</span> -->
 
+                  <!-- Warning Device Status -->
                   <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
+                    <img src="./images/icon/warning.png" alt="Warning" class="h-16 w-16 m-auto"/>
                     <div class="flex flex-col w-full ml-2 justify-center">
                       <div class="flex justify-between">
                         <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
                       </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
                     </div>
                   </div>
+                  <!-- Danger Device Status -->
                   <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
+                    <img src="./images/icon/danger.png" alt="Danger" class="h-16 w-16 m-auto"/>
                     <div class="flex flex-col w-full ml-2 justify-center">
                       <div class="flex justify-between">
                         <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
                       </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
                     </div>
                   </div>
-
+                  <!-- Warning Device Status -->
                   <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
+                    <img src="./images/icon/warning.png" alt="Warning" class="h-16 w-16 m-auto"/>
                     <div class="flex flex-col w-full ml-2 justify-center">
                       <div class="flex justify-between">
                         <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
                       </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
                     </div>
                   </div>
+                  <!-- Danger Device Status -->
                   <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
+                    <img src="./images/icon/danger.png" alt="Danger" class="h-16 w-16 m-auto"/>
                     <div class="flex flex-col w-full ml-2 justify-center">
                       <div class="flex justify-between">
                         <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
                       </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
                     </div>
                   </div>
-
+                  <!-- Warning Device Status -->
                   <div class="flex cursor-pointer my-2 p-2">
-                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-16 w-16 m-auto"/>
+                    <img src="./images/icon/warning.png" alt="Warning" class="h-16 w-16 m-auto"/>
                     <div class="flex flex-col w-full ml-2 justify-center">
                       <div class="flex justify-between">
                         <span class="text-xl font-semibold">POC Bank Lampung</span>
-                        <a class="text-xl cursor-pointer"><i class='bx bx-dots-horizontal-rounded'></i></a>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
                       </div>
-                      <span class="w-full border-b dark:border-dark-third border-black my-1"></span>
-                      <span class="text-sm font-medium">Jl. Raya Penggilingan No. 12A Gudang No.1</span>
+                    </div>
+                  </div>
+                  <!-- Danger Device Status -->
+                  <div class="flex cursor-pointer my-2 p-2">
+                    <img src="./images/icon/danger.png" alt="Danger" class="h-16 w-16 m-auto"/>
+                    <div class="flex flex-col w-full ml-2 justify-center">
+                      <div class="flex justify-between">
+                        <span class="text-xl font-semibold">POC Bank Lampung</span>
+                        <a class="text-3xl cursor-pointer mr-2"><i class='bx bxs-chevrons-down'></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Data Device Status Start -->
+                <!-- Data Device Status End -->
               </div>
-              <!-- Container Device Status List End -->
-              
+              <!-- Container Device Status List End --> 
             </div>
             <!-- Footer Content End -->
         </div>
