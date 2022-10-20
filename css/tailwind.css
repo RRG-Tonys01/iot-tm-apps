@@ -297,6 +297,10 @@ video {
 .flex-col {
   flex-direction: column;
 }
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
 /* Flex Direction End */
 
 .place-items-center {
