@@ -181,6 +181,10 @@ width: 80%;
 width: 100%;
 }
 
+.w-screen{
+width: screen;
+}
+
 /* Position */
 .fixed {
 position: fixed;
@@ -281,13 +285,14 @@ left: 0px;
 .left-2 {
 left: 0.5rem;
 }
-
-.left-1\/2 {
-left: 50%;
+.left-1\/5{
+left: 20%;
 }
-
 .left-1\/3 {
 left: 33.333333%;
+}
+.left-1\/2 {
+left: 50%;
 }
 
 

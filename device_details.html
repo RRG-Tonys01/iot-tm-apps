@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tangara Media</title>
+
+    <link rel="shortcut icon" href="./images/logo/tm_logo.png" type="image/png" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body class="bg-main-gray dark:bg-dark-main">
+        <!-- Navbar Header Start -->
+        <nav class="bg-blue-sky dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 dark:border-dark-third">
+            <!-- Navbar Header Left Content Start-->
+            <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 my-2">
+            <!-- Logo Start -->
+            <a href="index.html" class="mr-2 hidden md:inline-block pl-16">
+                <img src="./images/logo/iotTM_white.png" alt="IOT TM Loogo" class="w-24 sm:w-20 lg:w-24 h-auto"/>
+            </a>
+            <a href="index.html" class="inline-block md:hidden">
+                <img src="./images/logo/iotTM_white.png" alt="IOT TM Logo" class="w-32 h-auto" />
+            </a>
+            <!-- Logo End -->
+            </div>
+            <!-- Navbar Header Left Content End-->
+
+            <!-- Navbar Header Right Content Start-->
+            <ul class="hidden md:flex mx-4 items-center justify-center">
+            <li>
+                <div class="text-xl hidden xl:grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full  p-3 cursor-pointer hover:bg-gray-300 relative">
+                <i class="bx bx-search"></i>
+                </div>
+            </li>  
+            <li>
+                <div class="text-xl grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full p-3 cursor-pointer hover:bg-gray-300 relative">
+                <i class="bx bx-bell"></i>
+                <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </div>
+            </li>
+            <li class="h-full hidden xl:flex">
+                <a href="profile.html" class="inline-flex items-center justify-center p-1 rounded-full dark:hover:bg-dark-third mx-2">
+                <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7"/>
+                </a>
+            </li>
+            </ul>
+            <!-- Navbar Header Right Content End-->
+        </nav>
+        <!-- NAVBAR END -->
+
+       
+
+        <!-- Main Content Start -->
+        <div class="flex lg:justify-center h-screen">
+            <!-- Left Content Start-->
+            <div 
+                id="left-content"
+                class="w-1/5 pt-16 h-full hidden xl:flex flex-col relative top-0 left-0 bg-blue-sky shadow" 
+            >
+                <ul class="py-4 pl-4">
+                    <li>
+                        <a 
+                            href="index.html" 
+                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
+                        >
+                            <img src="./images/icon/dashboard.png" alt="Dashboard" class="w-10 h-10"/>
+                            <span class="font-semibold text-white text-xl">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="customer.html" 
+                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
+                        >
+                            <img src="./images/icon/customer.png" alt="Customer" class="w-10 h-10"/>
+                            <span class="font-semibold text-white text-xl">Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="device.html" 
+                            class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
+                        >
+                            <img src="./images/icon/devices.png" alt="Devices" class="w-10 h-10"/>
+                            <div class="font-semibold text-white text-xl">Devices</div> 
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#" 
+                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                            <img src="./images/icon/entity.png" alt="Entity" class="w-10 h-10"/>
+                            <span class="font-semibold text-white text-xl">Entity</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#" 
+                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
+                            <img src="./images/icon/sensor.png" alt="Sensor" class="w-10 h-10"/>
+                            <span class="font-semibold text-white text-xl">Sensor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Left Content End -->
+            
+            <!-- Middle Content Start -->
+            <div 
+                class="w-4/5 lg:w-2/3 xl:w-4/5 pt-32 lg:pt-16 lg:pr-16 xl:pr-8 px-2 right-0 overflow-y-scroll scrollbar-style-none" 
+                id="body-content-desktop-view"
+            >
+               <div class="bg-white w-1/3 mt-4 ml-4 items-center">
+                    <div class="flex flex-col">
+                        <img src="./images/logo/tm_logo.png" class="w-32 h-32">
+                        <img src="./images/assets/device.png" class="w-1/2 h-32 ">
+                    </div>
+                    <!-- <img src="./images/assets/iot_gateway.png" class="w-full h-1/2 py-2 justify center"> -->
+               </div>
+            </div>
+            <!-- Middle Content End -->
+        </div>
+        <!-- Main Content End -->
+      
+      
+        <!-- Javascript -->
+        <script src="./js/app.js"></script>
+        <script src="./js/show.js"></script>
+  </body>
+</html>
