@@ -57,3 +57,10 @@ border-color: rgba(36, 37, 38, var(--tw-border-opacity));
 border-color: rgba(58, 59, 60, var(--tw-border-opacity));
 }
 /* Border Dark Mode End */
+
+
+.dark .dark\:text-dark-txt {
+    --tw-text-opacity: 1;
+    color: rgba(184, 187, 191, var(--tw-text-opacity));
+  }
+  

@@ -31,3 +31,8 @@
     display: inline-block;
 }
 /* Display End */
+
+/* Display with Event Listener */
+.show\:fixed{
+    display: fixed;
+}
