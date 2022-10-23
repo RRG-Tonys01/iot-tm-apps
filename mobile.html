@@ -86,14 +86,17 @@
                 <li class="my-2">
                     <a 
                         href="customer.html" 
-                        class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all"
+                        class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all"
                     >
                         <img src="./images/icon/customer.png" alt="Group Icon" class="w-10 h-10"/>
                         <span class="font-semibold">Customers</span>
                     </a>
                 </li>
                 <li class="my-2">
-                    <a href="device.html" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all">
+                    <a 
+                        href="device.html" 
+                        class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all"
+                    >
                     <img src="./images/icon/devices.png" alt="Profile picture" class="w-10 h-10"/>
                     <div class="font-semibold">Devices</div> 
                     </a>
@@ -128,602 +131,85 @@
         <!-- TABLET to DESKTOP VIEW START-->
         <div 
             id="main-bdy-desktop-view"
-            class="w-4/5 hidden md:block md:w-full pt-16 px-7 h-full absolute top-0 lg:left-1/5 overflow-y-scroll scrollbar-width-none"
+            class="w-4/5 hidden md:block md:w-full pt-16 px-5 h-full absolute top-0 lg:left-1/5 overflow-y-scroll scrollbar-width-none"
         >
-            <!-- Header Content Start -->
-            <div class="relative flex space-x-2 pt-4 flex-col">
-                <span class="text-5xl font-semibold text-blue-500 ">Customers</span>
-                <span class="text-sm mt-2 font-medium text-blue-500">List of Customers on the Platform</span>
-            </div>
-            <!-- Header Content End -->
-
-            <!-- Body Content Start -->
-            <div class="flex flex-col space-x-2 pt-4 mt-4 h-131 bg-white">
-                <!-- Body Filter Start -->
-                <div class="flex rounded-3xl mx-2 py-4">
-                    <select 
-                        name="province" 
-                        id="province" 
-                        class="border-b border-black ml-4"
-                    >
-                        <option value="*" disabled selected>All Provinces</option>
-                        <option value="Sumatra">Sumatra</option>
-                        <option value="Jawa">Jawa</option>
-                        <option value="Kalimantan">Kalimantan</option>
-                        <option value="Sulawesi">Sulawesi</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Nusa Tenggara">Nusa Tenggara</option>
-                    </select>
-                    <select 
-                        name="city" 
-                        id="city" 
-                        class="border-b border-black ml-4"
-                    >
-                        <option value="*" disabled selected>All Cities</option>
-                        <option value="Sumatra">Sumatra</option>
-                        <option value="Jawa">Jawa</option>
-                        <option value="Kalimantan">Kalimantan</option>
-                        <option value="Sulawesi">Sulawesi</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Nusa Tenggara">Nusa Tenggara</option>
-                    </select>
-                    <!-- <div class="flex justify-end">
-                        <button class="bg-blue-500 rounded-lg flex">
-                            <i class='bx bx-plus-circle pl-2 my-auto text-lgl text-white'></i>
-                            <span class="text-center font-medium text-sm px-1 text-white">ADD</span>
-                        </button>
-                    </div> -->
-                </div>
-                <!-- Body Filter End -->
-
-                <!-- Customer List Start -->
-                <div class="flex flex-col">
-                    <!-- Customer Row 1 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer1"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer2"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 1 End -->
-
-
-                    <!-- Customer Row 2 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer3"
-                            data-filter="jawa"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer4"
-                            data-filter="kalimantan"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 2 End -->
-                    <!-- Customer Row 1 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer1"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer2"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 1 End -->
-
-
-                    <!-- Customer Row 2 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer3"
-                            data-filter="jawa"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer4"
-                            data-filter="kalimantan"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 2 End -->
-                    <!-- Customer Row 1 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer1"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer2"
-                            data-filter="sumatra"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 1 End -->
-
-
-                    <!-- Customer Row 2 Start -->
-                    <div class="flex m-2">
-                        <!-- Customer 1 -->
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer3"
-                            data-filter="jawa"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-
-                        <div 
-                            id="customerID_1"
-                            class="flex flex-col border-2 border-black w-472 h-110 rounded-2lg mx-2 cursor-pointer customer"
-                            data-value="customer4"
-                            data-filter="kalimantan"
-                        >
-                            <div class="flex justify-between">
-                                <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                                <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                            </div>
-                            <div class="flex">
-                                <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                                <div class="flex-col">
-                                    <div class="flex my-2 ">
-                                        <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
-                                    </div>
-                                    <div class="flex my-2">
-                                        <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                        <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex m-2 justify-end">
-                                
-                                <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                                <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Customer Row 2 End -->
-                </div>
-                <!-- Customer List End -->
-            </div>
-            <!-- Body Content End -->
-
-            <!-- Customer POP UP Start -->
-            <div 
-                id="customer-pop-up-desktop-view"
-                class="fixed top-14 right-0 border-l-1 border-black w-1/2 h-full bg-white hidden customer-pop-up"
-            >
-                <!-- POP UP Header Start-->
-                <div class="bg-blue-750 h-auto flex flex-col relative space-x-2 pt-4 pl-4 border-black">
-                    <span class="justify-start font-bold text-2xl ml-2 text-white">Customer POC Bank Lampung</span>
-                    <span class="text-xl mt-2 font-medium text-white">Customer Detail</span>
-                    <div class="flex pt-8 mb-4  px-4 justify-end">
-                        <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                        <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                        <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                        <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                    </div>
-                </div>
-                <!-- POP UP Header End -->
-
-                <!-- POP UP Sub Header Start -->
-                <div class="flex space-x-2 bg-white border-y-1 border-black h-auto p-2 justify-between" id="customer-pop-up-sub-header-desktop-view">
-                    <!-- <i class="bx bxs-chevron-left" class="mx-2"></i> -->
-                    <a id="pop-up-customer-detail"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100 text-blue-100">Details</span></a>
-                    <a id="pop-up-customer-attributes"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Attributes</span></a>
-                    <a id="pop-up-customer-telemetry"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Telemetry</span></a>  
-                    <a id="pop-up-customer-alarms"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Alarms</span></a>
-                    <a id="pop-up-customer-events"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Events</span></a>
-                    <a id="pop-up-customer-relations"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Relations</span></a>
-                    <a id="pop-up-customer-audit"><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Audit</span></a>
-                <!-- <i class='bx bx-chevron-right' class="mx-2"></i> -->
-                </div>
-                <!-- POP UP Sub Header End -->
-
-                <!-- POP UP Body Start -->
-                <div class="block mx-4 pt-2">
-                    <!-- Customer Detail Start -->
+            <div class="flex">
+                <div class="flex bg-white w-1/3 mt-4 ml-4 items-center">
                     <div class="flex flex-col">
-                        <span class="text-lg font-semibold my-1">Customer ID</span>
+                        <img src="./images/logo/tm_logo.png" class="w-32 h-32">
+                        <img src="./images/assets/device.png" class="w-1/2 h-auto justify-center mx-auto">
+                        <span class="text-3xl font-bold justify-center mx-auto">IOT ES32W Wireless</span>
+                        <div class="flex justify-center my-2">
+                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer">
+                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer">
+                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-7 h-7 mx-2 cursor-pointer">
+                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-7 h-7 mx-2 cursor-pointer">
+                            <img src="./images/icon/trash.png" alt="Remove" class="w-7 h-7 mx-2 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-col w-2/3 mt-4 ml-4 items-center">
+                    <div class="flex">
+                        <div class="w-64 p-2 bg-white mx-2 rounded-lg">
+                            <span class="text-xl font-medium px-4">Detail</span>
+                        </div>
+                        <div class="w-64 p-2 bg-blue-100 mx-2 rounded-lg">
+                            <span class="text-xl font-medium px-4">Customer</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white h- w-full my-4 mx-2 px-4 pt-2 pb-4">
+                        <span class="text-lg font-semibold my-1">Device ID</span>
                         <span class="text-sm font-normal">867f4240-09e1-11ea-b372-9ff9b7a7b54e</span>
                         <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <span class="text-lg font-semibold my-1">Customer Name</span>
+                        <span class="text-lg font-semibold my-1">Device Token</span>
                         <span class="text-sm font-normal">POC Bank Lampung</span>
                         <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <span class="text-lg font-semibold my-1">Description</span>
-                        <span class="text-sm font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo excepturi voluptates dicta accusamus? Reprehenderit dolores maiores libero in, eaque eveniet!</span>
-                        <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <span class="text-lg font-semibold my-1">Country</span>
-                        <select name="country" id="country" class="text-sm font-normal outline-none">
-                            <option value="Indonesia" selected>Indonesia</option>
-                            <option value="Malaysia">Malaysia</option>
-                            <option value="Inggris">Inggris</option>
-                            <option value="Rusia">Rusia</option>
-                            <option value="Myanmar">Myanmar</option>
-                            <option value="Brunei">Brunei</option>
-                            <option value="Ukraina">Ukraina</option>
-                        </select>
-                        <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <div class="flex my-1">
-                            <div class="flex-col w-1/3">
-                                <span class="text-lg font-semibold my-1">Province</span>
-                                <select name="province" id="province" class="text-sm font-normal outline-none w-full">
-                                    <option value="Indonesia" selected>Indonesia</option>
-                                    <option value="Malaysia">Malaysia</option>
-                                    <option value="Inggris">Inggris</option>
-                                    <option value="Rusia">Rusia</option>
-                                    <option value="Myanmar">Myanmar</option>
-                                    <option value="Brunei">Brunei</option>
-                                    <option value="Ukraina">Ukraina</option>
-                                </select>
-                                <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            </div>
-                            <div class="flex-col w-1/3 px-2">
-                                <span class="text-lg font-semibold my-1">City</span>
-                                <select name="city" id="city" class="text-sm font-normal outline-none w-full">
-                                    <option value="Indonesia" selected>Indonesia</option>
-                                    <option value="Malaysia">Malaysia</option>
-                                    <option value="Inggris">Inggris</option>
-                                    <option value="Rusia">Rusia</option>
-                                    <option value="Myanmar">Myanmar</option>
-                                    <option value="Brunei">Brunei</option>
-                                    <option value="Ukraina">Ukraina</option>
-                                </select>
-                                <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            </div>
-                            <div class="flex-col w-1/3 px-2">
-                                <span class="text-lg font-semibold my-1">Postal Code</span>
-                                <select name="postal-code" id="postal-code" class="text-sm font-normal outline-none w-full">
-                                    <option value="Indonesia" selected>Indonesia</option>
-                                    <option value="Malaysia">Malaysia</option>
-                                    <option value="Inggris">Inggris</option>
-                                    <option value="Rusia">Rusia</option>
-                                    <option value="Myanmar">Myanmar</option>
-                                    <option value="Brunei">Brunei</option>
-                                    <option value="Ukraina">Ukraina</option>
-                                </select>
-                                <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            </div>
-                        </div>
-                        <span class="text-lg font-semibold my-1">Address</span>
-                        <span class="text-sm font-normal">Jl. Lampung Raya no.37A Block C. Perumahan Marganthara</span>
-                        <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <span class="text-lg font-semibold my-1">Phone</span>
-                        <span class="text-sm font-normal">08123459671</span>
-                        <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        <span class="text-lg font-semibold my-1">Email</span>
-                        <span class="text-sm font-normal">banklampung@mitrakom.co.id</span>
+                        <span class="text-lg font-semibold my-1">Device Name</span>
+                        <span class="text-sm font-normal">Device POC Bank Lampung</span>
                         <div class="border-b border-black dark:border-dark-third border-dash"></div>
                     </div>
-                    <!-- Customer Detail End -->
-
-                    <!-- Customer Attributes Start -->
-                    <div class="flex flex-col hidden" id="customer-attributes">
-                        <h1>Hello From Switch</h1>
-                    </div>
-                    <!-- Customer Attributes End -->
                 </div>
-                <!-- POP UP Body End -->
             </div>
-            <!-- Customer POP UP End -->
+
+            <div class="flex"> 
+                <div class="flex flex-col bg-red-100 w-1/3 h-auto ml-4 mt-4">
+                    <div class="flex justify-center px-4 my-2">
+                        <span class="text-xl font-bold mx-4">Battery Status :</span>
+                        <span class="text-xl font-bold mx-4">100%</span>
+                    </div>
+                    <img src="./images/user/rrg.jpg" alt="" class="w-1/2 h-auto mx-auto rounded-full">
+                    <span class="text-2lg font-medium text-center">Date Installed :</span>
+                    <span class="text-lg font-medium text-center">10 Oktober 2022</span>
+                </div>
+                <div class="flex flex-col bg-red-100 w-1/3 h-auto ml-4 mt-4">
+                    <div class="flex justify-center px-4">
+                        <span class="text-3xl font-bold">Battery Status : </span>
+                        <span class="text-3xl font-bold ml-4 my-auto">88%</span>
+                    </div>
+                    <img src="./images/user/rrg.jpg" alt="" class="w-1/2 h-auto mx-auto rounded-full">
+                    <span class="text-2lg font-medium text-center">Date Installed :</span>
+                    <span class="text-lg font-medium text-center">10 Oktober 2022</span>
+                </div>
+                <div class="flex flex-col bg-red-100 w-1/3 h-auto ml-4 mt-4">
+                    <div class="flex justify-center px-4">
+                        <span class="text-3xl font-bold">Battery Status : </span>
+                        <span class="text-3xl font-bold ml-4 my-auto">88%</span>
+                    </div>
+                    <img src="./images/user/rrg.jpg" alt="" class="w-1/2 h-auto mx-auto rounded-full">
+                    <span class="text-2lg font-medium text-center">Date Installed :</span>
+                    <span class="text-lg font-medium text-center">10 Oktober 2022</span>
+                </div>
+            </div>
         </div>
         <!-- TABLET to DESKTOP VIEW END-->
 
         <!-- MOBILE VIEW START -->
         <div class="md:hidden w-full h-full pt-16 bg-white">  
-             <!-- Header Content Start -->
-             <div class="relative flex space-x-2 pt-2 flex-col px-4">
-                <span class="text-5xl font-semibold text-blue-500 text-center">Customers</span>
-                <span class="text-sm mt-2 font-medium text-blue-500 text-center">List of Customers on the Platform</span>
+            <!-- Header Content Start -->
+            <div class="relative flex space-x-2 pt-2 flex-col px-4">
+                <span class="text-5xl font-semibold text-blue-500 text-center">Devices</span>
+                <span class="text-sm mt-2 font-medium text-blue-500 text-center">List of Devices on the Platform</span>
             </div>
             <div class="border-b border-black w-full dark:border-dark-third border-blue-200 mt-2"></div>
             <!-- Header Content End -->
@@ -767,360 +253,244 @@
                 </div> -->
                 <!-- Body Filter End -->
 
-                <!-- Customer List Start -->
-                <div class="flex flex-col mx-2 px-4">
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+                <!-- Device List Start -->
+                <div class="flex flex-col h-auto">
+                    <!-- Devices List in Sumatra Start-->
+                    <div class="flex justify-between my-2">
+                        <span class="text-3xl font-bold mx-4">Sumatra</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Hide</span>
+                    </div>
+
+                    <!-- Devices List Start -->
+                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
+                        <!-- Device Online in Sumatra -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="bg-green-500 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-main-gray w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+
+                        <!-- Device Offline in Sumatra -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+
+                        <!-- Device Warning in Sumatra -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-main-gray w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+
+                        <!-- Device Danger in Sumatra -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/danger.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
                     </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-main-gray w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+                    <!-- Devices List in Sumatra End-->
+
+                      <!-- Devices List in Jawa Start-->
+                      <div class="flex justify-between my-2">
+                        <span class="text-3xl font-bold mx-4">Jawa</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Hide</span>
+                    </div>
+
+                    <!-- Devices List Start -->
+                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
+                        <!-- Device Online in Jawa -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="bg-green-500 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <div class="flex flex-col border-2 border-black w-full h-110 rounded-2lg my-2">
-                        <div class="flex justify-between">
-                            <span class="font-bold text-lg ml-4">Customer POC Bank Lampung</span>
-                            <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mx-2 mt-1"></span>
-                        </div>
-                        <div class="flex">
-                            <img src="./images/user/rrg.jpg" alt="Customer1" class="w-16 h-16 rounded-full m-2">
-                            <div class="flex-col">
-                                <div class="flex my-2 ">
-                                    <img src="./images/icon/user.png" alt="User Total" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">10 Users</span>
+
+                        <!-- Device Offline in Jawa -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
-                                <div class="flex my-2">
-                                    <img src="./images/icon/device_installed.png" alt="Device Installed" class="w-7 h-7 mx-2">
-                                    <span class="text-sm mx-2 my-1 font-medium">70 Device Installed</span>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
                                 </div>
                             </div>
                         </div>
-                        <div class="flex m-2 justify-end">
-                            
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
+
+                        <!-- Device Warning in Jawa -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Device Danger in Jawa -->
+                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/danger.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                                <div class="flex m-2 justify-end">
+                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Devices List in Jawa End-->
+
+                    <!-- Devices List in Kalimantan Start-->
+                    <div class="flex justify-between mt-2">
+                        <span class="text-3xl font-bold mx-4">Kalimantan</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer hover:underline">Show</span>
+                    </div>
+
+                    <!-- Devices List Start -->
+                    <div class="flex m-2">
+                        <div class="flex border-2 border-black w-full justify-between rounded-2lg mx-2 px-4">
+                            <span class="text-center text-lg text-semibold font-normal align-center mx-auto">There is 1081 devices was Installed</span>
+                        </div>
+                    </div>
+                    <!-- Devices List End -->
+                    <!-- Devices List in Kalimantan End-->
                 </div>
-                <!-- Customer List End -->
-
-                <!-- Customer POP UP Start -->
-                <div class="fixed top-14 right-0 border-l-1 border-black w-full h-full bg-white" id="customer-pop-up-desktop-view">
-                    <!-- POP UP Header Start-->
-                    <div class="bg-blue-750 h-auto flex flex-col relative space-x-2 pt-4 pl-2 border-black">
-                        <span class="justify-start font-bold text-2xl ml-2 text-white">Customer POC Bank Lampung</span>
-                        <span class="text-xl mt-2 font-medium text-white">Customer Detail</span>
-                        <div class="flex pt-8 mb-4 pl-4 pr-2 justify-end">
-                            <img src="./images/icon/manage_user.png" alt="Manager User" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/manage_device.png" alt="Manager Device" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/dashboard_user.png" alt="User Dashboard" class="w-5 h-auto mx-2 cursor-pointer">
-                            <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                        </div>
-                    </div>
-                    <!-- POP UP Header End -->
-
-                    <!-- POP UP Sub Header Start -->
-                    <div class="flex space-x-2 bg-white border-y-1 border-black h-auto p-2 justify-between" id="customer-pop-up-sub-header-desktop-view">
-                        <!-- <i class="bx bxs-chevron-left" class="mx-2"></i> -->
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100 text-blue-100">Details</span></a>
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Attributes</span></a>
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Telemetry</span></a>  
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Alarms</span></a>
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Events</span></a>
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Relations</span></a>
-                        <a href=""><span class="ml-2 mr-4 text-lg font-normal hover:underline hover:text-blue-100">Audit</span></a>
-                    <!-- <i class='bx bx-chevron-right' class="mx-2"></i> -->
-                    </div>
-                    <!-- POP UP Sub Header End -->
-
-                    <!-- POP UP Body Start -->
-                    <div class="block mx-4 pt-2">
-                        <!-- Customer Detail Start -->
-                        <div class="flex flex-col">
-                            <span class="text-lg font-semibold my-1">Customer ID</span>
-                            <span class="text-sm font-normal">867f4240-09e1-11ea-b372-9ff9b7a7b54e</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <span class="text-lg font-semibold my-1">Customer Name</span>
-                            <span class="text-sm font-normal">POC Bank Lampung</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <span class="text-lg font-semibold my-1">Description</span>
-                            <span class="text-sm font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo excepturi voluptates dicta accusamus? Reprehenderit dolores maiores libero in, eaque eveniet!</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <span class="text-lg font-semibold my-1">Country</span>
-                            <select name="country" id="country" class="text-sm font-normal outline-none">
-                                <option value="Indonesia" selected>Indonesia</option>
-                                <option value="Malaysia">Malaysia</option>
-                                <option value="Inggris">Inggris</option>
-                                <option value="Rusia">Rusia</option>
-                                <option value="Myanmar">Myanmar</option>
-                                <option value="Brunei">Brunei</option>
-                                <option value="Ukraina">Ukraina</option>
-                            </select>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <div class="flex my-1">
-                                <div class="flex-col w-1/3">
-                                    <span class="text-lg font-semibold my-1">Province</span>
-                                    <select name="province" id="province" class="text-sm font-normal outline-none w-full">
-                                        <option value="Indonesia" selected>Indonesia</option>
-                                        <option value="Malaysia">Malaysia</option>
-                                        <option value="Inggris">Inggris</option>
-                                        <option value="Rusia">Rusia</option>
-                                        <option value="Myanmar">Myanmar</option>
-                                        <option value="Brunei">Brunei</option>
-                                        <option value="Ukraina">Ukraina</option>
-                                    </select>
-                                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                                </div>
-                                <div class="flex-col w-1/3 px-2">
-                                    <span class="text-lg font-semibold my-1">City</span>
-                                    <select name="city" id="city" class="text-sm font-normal outline-none w-full">
-                                        <option value="Indonesia" selected>Indonesia</option>
-                                        <option value="Malaysia">Malaysia</option>
-                                        <option value="Inggris">Inggris</option>
-                                        <option value="Rusia">Rusia</option>
-                                        <option value="Myanmar">Myanmar</option>
-                                        <option value="Brunei">Brunei</option>
-                                        <option value="Ukraina">Ukraina</option>
-                                    </select>
-                                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                                </div>
-                                <div class="flex-col w-1/3 px-2">
-                                    <span class="text-lg font-semibold my-1">Postal Code</span>
-                                    <select name="postal-code" id="postal-code" class="text-sm font-normal outline-none w-full">
-                                        <option value="Indonesia" selected>Indonesia</option>
-                                        <option value="Malaysia">Malaysia</option>
-                                        <option value="Inggris">Inggris</option>
-                                        <option value="Rusia">Rusia</option>
-                                        <option value="Myanmar">Myanmar</option>
-                                        <option value="Brunei">Brunei</option>
-                                        <option value="Ukraina">Ukraina</option>
-                                    </select>
-                                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                                </div>
-                            </div>
-                            <span class="text-lg font-semibold my-1">Address</span>
-                            <span class="text-sm font-normal">Jl. Lampung Raya no.37A Block C. Perumahan Marganthara</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <span class="text-lg font-semibold my-1">Phone</span>
-                            <span class="text-sm font-normal">08123459671</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                            <span class="text-lg font-semibold my-1">Email</span>
-                            <span class="text-sm font-normal">banklampung@mitrakom.co.id</span>
-                            <div class="border-b border-black dark:border-dark-third border-dash"></div>
-                        </div>
-                        <!-- Customer Detail End -->
-
-                        <!-- Customer Attributes Start -->
-                        <!-- <div class="flex flex-col">
-                        
-                        </div> -->
-                        <!-- Customer Attributes End -->
-                    </div>
-                    <!-- POP UP Body End -->
-                </div>
-                <!-- Customer POP UP End -->
+                <!-- Device List End -->
             </div>
             <!-- Body Content End -->
 
