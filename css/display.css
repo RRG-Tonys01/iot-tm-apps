@@ -36,3 +36,17 @@
 .show\:fixed{
     display: fixed;
 }
+
+
+/* Opacity */
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-10{
+    opacity: 0.1;
+}
+
+.opacity-50{
+    opacity: 0.5;
+}

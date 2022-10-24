@@ -46,20 +46,36 @@ height: 5.5rem;
 height: 11rem;
 }
 
+.h-254 {
+height: 15.875rem; /* 254px*/
+}
+
 .h-110{
-height: 6,875rem;
+height: 6.875rem;
 }
 
 .h-131{
-height: 8,1875rem;
+height: 8.1875rem;
+}
+
+.h-332 {
+height: 20.755rem; /* 254px*/
 }
 
 .h-96 {
 height: 25rem;
 }
 
+.h-626 {
+height: 40rem;
+}
+
 .h-auto {
 height: auto;
+}
+
+.h-1\/2 {
+height: 50%;
 }
 
 .h-3\/5 {

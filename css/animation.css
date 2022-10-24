@@ -1,0 +1,58 @@
+.animation\:charge-1{
+    animation: charge-1 2s infinite;
+}
+.animation\:charge-2{
+    animation: charge-2 2s infinite;
+}
+.animation\:charge-3{
+    animation: charge-3 2s infinite;
+}
+.animation\:charge-4{
+    animation: charge-4 2s infinite;
+}
+
+
+
+
+/* Battery Animation Start */
+@keyframes charge-1 {
+    25%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes charge-2 {
+    0%,
+    25% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes charge-3 {
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    75%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes charge-4 {
+    0%,
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Battery Animation End */

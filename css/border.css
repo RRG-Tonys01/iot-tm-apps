@@ -72,6 +72,16 @@
     border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-left-2lg{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.rounded-right-lg{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
 .rounded-right-3xl{
     border-top-right-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;

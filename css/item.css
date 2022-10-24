@@ -41,8 +41,15 @@ justify-content: space-between;
 justify-content: flex-end;
 }
 
+.justify-around{
+justify-content:space-around;
+}
+
 .flex-1 {
 flex: 1 1 0%;
+}
+.flex-3 {
+flex: 2 1 auto;
 }
 
 .float-right {
