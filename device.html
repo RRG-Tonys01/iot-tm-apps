@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IOT Application</title>
@@ -11,16 +12,15 @@
 
     <!-- Import Libaray -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+</head>
 
-  <body class="bg-main-gray">
-      <!-- Navbar Header Start -->
-      <nav 
-        class="bg-blue-sky h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50">
+<body class="bg-main-gray">
+    <!-- Navbar Header Start -->
+    <nav class="bg-blue-sky h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50">
         <!-- Navbar Left Start -->
         <div class="flex items-center justify-between w-full md:w-max px-4 py-2">
             <a href="#" class="mr-2 hidden md:inline-block pl-16">
-                <img src="./images/logo/iotTM_white.png" alt="Tangara logo" class="w-24 sm:w-20 lg:w-24 h-auto"/>
+                <img src="./images/logo/iotTM_white.png" alt="Tangara logo" class="w-24 sm:w-20 lg:w-24 h-auto" />
             </a>
 
             <!-- Mobile Nav Header Start -->
@@ -29,12 +29,12 @@
             </a>
             <div class="flex items-center justify-between space-x-1 md:hidden">
                 <div class="relative px-2 py-2 w-10 h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-10 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center justify-center cursor-pointer">
-                <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
-                <input type="text" placeholder="Search Facebook" class="outline-none bg-transparent hidden xl:inline-block"/>
+                    <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                    <input type="text" placeholder="Search Facebook" class="outline-none bg-transparent hidden xl:inline-block" />
                 </div>
                 <div class="text-2xl grid place-items-center md:hidden rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt relative">
-                <i class="bx bx-bell"></i>
-                <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">2</span>
+                    <i class="bx bx-bell"></i>
+                    <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">2</span>
                 </div>
             </div>
             <!-- Mobile Nav Header Start -->
@@ -43,132 +43,124 @@
 
         <!-- Navbar Right Start -->
         <ul class="hidden md:flex mx-4 items-center justify-center">
-          <li>
-            <div
-              id="nav-right-search" 
-              class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative" 
-            >
-              <i class="bx bx-search-alt-2"></i>
-            </div>
-          </li>
-  
-          <li>
-            <div class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
-              <i class="bx bx-bell"></i>
-              <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
-            </div>
-          </li>
-          <li class="h-full hidden xl:flex">
-            <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
-              <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7"/>
-            </a>
-          </li>
+            <li>
+                <div id="nav-right-search" class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <i class="bx bx-search-alt-2"></i>
+                </div>
+            </li>
+
+            <li>
+                <div class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <i class="bx bx-bell"></i>
+                    <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
+                </div>
+            </li>
+            <li class="h-full hidden xl:flex">
+                <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
+                    <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7" />
+                </a>
+            </li>
         </ul>
         <!-- Navbar Right End -->
-      </nav>
-      <!-- Navbar Header End -->
+    </nav>
+    <!-- Navbar Header End -->
 
-      <!-- Main Content Start -->
-      <div class="flex lg:justify-center h-screen">
+    <!-- Main Content Start -->
+    <div class="flex lg:justify-center h-screen">
         <!-- Left Content Start-->
-        <div 
-            class="w-1/5 pt-16 h-full hidden xl:flex flex-col fixed top-0 left-0 bg-blue-sky" id="left-content">
+        <div class="w-1/5 pt-16 h-full hidden xl:flex flex-col fixed top-0 left-0 bg-blue-sky" id="left-content">
             <ul class="py-4 pl-4">
                 <li class="my-2">
-                    <a 
-                        href="index.html" 
-                        class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all"
-                    >
-                        <img src="./images/icon/dashboard.png" alt="Friend Icon" class="w-10 h-10"/>
+                    <a href="index.html" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all">
+                        <img src="./images/icon/dashboard.png" alt="Friend Icon" class="w-10 h-10" />
                         <span class="font-semibold">Dashboard</span>
                     </a>
                 </li>
                 <li class="my-2">
-                    <a 
-                        href="customer.html" 
-                        class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all"
-                    >
-                        <img src="./images/icon/customer.png" alt="Group Icon" class="w-10 h-10"/>
+                    <a href="customer.html" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all">
+                        <img src="./images/icon/customer.png" alt="Group Icon" class="w-10 h-10" />
                         <span class="font-semibold">Customers</span>
                     </a>
                 </li>
                 <li class="my-2">
-                    <a 
-                        href="device.html" 
-                        class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all"
-                    >
-                    <img src="./images/icon/devices.png" alt="Profile picture" class="w-10 h-10"/>
-                    <div class="font-semibold">Devices</div> 
+                    <a href="device.html" class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all">
+                        <img src="./images/icon/devices.png" alt="Profile picture" class="w-10 h-10" />
+                        <div class="font-semibold">Devices</div>
                     </a>
                 </li>
                 <li class="my-2">
                     <a href="entity.html" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all">
-                    <img src="./images/icon/entity.png" alt="Profile picture" class="w-10 h-10 rounded-full"/>
-                    <span class="font-semibold">Entity</span>
+                        <img src="./images/icon/entity.png" alt="Profile picture" class="w-10 h-10 rounded-full" />
+                        <span class="font-semibold">Entity</span>
                     </a>
                 </li>
             </ul>
 
             <div class="mt-auto p-6 text-sm text-gray-500 dark:text-dark-txt">
-            <a href="#">Privacy</a>
-            <span>.</span>
-            <a href="#">Terms</a>
-            <span>.</span>
-            <a href="#">Advertising</a>
-            <span>.</span>
-            <a href="#">Ad Choices</a>
-            <span>.</span>
-            <a href="#">Cookies</a>
-            <span>.</span>
-            <a href="#">More</a>
-            <span>.</span>
-            <span>TM © 2022</span>
+                <a href="#">Privacy</a>
+                <span>.</span>
+                <a href="#">Terms</a>
+                <span>.</span>
+                <a href="#">Advertising</a>
+                <span>.</span>
+                <a href="#">Ad Choices</a>
+                <span>.</span>
+                <a href="#">Cookies</a>
+                <span>.</span>
+                <a href="#">More</a>
+                <span>.</span>
+                <span>TM © 2022</span>
             </div>
         </div>
         <!-- Left Content End -->
 
 
         <!-- TABLET to DESKTOP VIEW START-->
-        <div 
-            id="main-bdy-desktop-view"
-            class="w-4/5 hidden md:block md:w-full pt-16 px-5 h-full absolute top-0 lg:left-1/5 overflow-y-scroll scrollbar-width-none"
-        >
+        <div id="main-bdy-desktop-view" class="w-4/5 hidden md:block md:w-full pt-16 px-5 h-full absolute top-0 lg:left-1/5 overflow-y-scroll scrollbar-width-none">
             <!-- Header Content Start -->
             <div class="relative flex space-x-2 pt-4 flex-col">
-                <span class="text-5xl font-semibold text-blue-500 ">Devices</span>
+                <span class="text-5xl font-semibold text-blue-500 cursor-pointer" onclick="window.location='device.html'">Devices</span>
                 <span class="text-sm mt-2 font-medium text-blue-500">List of Devices on the Platform</span>
             </div>
             <!-- Header Content End -->
 
-            <!-- Body Content Start -->
-            <div class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white">
+            <!-- All Device Status Start -->
+            <div id="all-device-status-list" class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white">
                 <!-- Body Filter Start -->
-                <div class="flex rounded-3xl mx-2 py-4">
-                    <select 
-                        name="device_status" 
-                        id="device_status" 
-                        class="border-b border-black ml-4 pr-4"
-                    >
-                        <option value="*" disabled selected>All Status</option>
-                        <option value="Online" class="text-green-500 mx-2">Online</option>
-                        <option value="Online" class="text-gray-500 mx-2">Offline</option>
-                        <option value="Online" class="text-yellow-500 mx-2">Warning</option>
-                        <option value="Online" class="text-red-500 mx-2">Error</option>
-                    </select>
+                <div class="flex rounded-3xl mx-2 py-4 w-full">
+                    <div class="flex justify-start w-1/2">
+                        <select name="device_status" id="device_status" class="border-b border-black ml-4 pr-4">
+                            <option value="All">All Status</option>
+                            <option value="Online" class="text-green-500 mx-2">Online</option>
+                            <option value="Offline" class="text-gray-500 mx-2">Offline</option>
+                            <option value="Warning" class="text-yellow-500 mx-2">Warning</option>
+                            <option value="Error" class="text-red-500 mx-2">Error</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-end w-1/2 px-4">
+                        <div class="flex shadow mx-2 w-1/2 justify-between cursor-pointer float-right">
+                            <input class="text-gray-500 text-sm px-4 my-auto w-full h-full cursor-pointer" placeholder="Find Device"></input>
+                            <i class="bx bx-search-alt-2 text-xl my-auto"></i>
+                        </div>
+                        <div class="flex bg-blue-500 rounded-lg mx-2 cursor-pointer hover:bg-blue-800">
+                            <span><i class='bx bx-plus-circle pl-2 my-auto text-lg text-white'></i></span>
+                            <span class="font-medium text-sm pr-2 my-auto mx-2 text-white">ADD</span>
+                        </div>
+                    </div>
                 </div>
                 <!-- Body Filter End -->
 
-               <!-- Devices List Start -->
-               <div class="flex flex-col mb-4 ">
+                <!-- Devices List Start -->
+                <div class="flex flex-col mb-4 ">
                     <!-- Devices List in Online Start-->
-                    <div class="flex justify-between my-2">
+                    <div
+                        id="device-online"
+                        class="flex justify-between my-2 online">
                         <span class="text-3xl font-bold mx-4">Online</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Show All</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer" onclick="showAllDevices('all-device-online-list')">Show All</span>
                     </div>
-
-                    <!-- Devices Online List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2 online">
+                        <div class="flex border shadow w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" onclick="window.location='device_details.html'">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -185,7 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -204,17 +196,16 @@
                         </div>
                     </div>
                     <!-- Devices List in Online End-->
-                    
-                    <!-- Devices List in Offline Start-->
-                    <div class="flex justify-between my-2">
-                        <span class="text-3xl font-bold mx-4">Offline</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Show All</span>
-                    </div>
 
-                    <!-- Devices Offline List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <!-- Device Offline in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                    <!-- <div class="border-b border-gray-200 w-full border-blue-200 mt-2"></div> -->
+
+                    <!-- Devices List in Offline Start-->
+                    <div class="flex justify-between my-2 offline">
+                        <span class="text-3xl font-bold mx-4">Offline</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer" onclick="showAllDevices('all-device-offline-list')">Show All</span>
+                    </div>
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2 offline">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -231,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -251,62 +242,62 @@
                     </div>
                     <!-- Devices List in Offline End-->
 
+                    <!-- <div class="border-b border-gray-200 w-full border-blue-200 mt-2"></div> -->
+
                     <!-- Devices List in Warning Start-->
-                    <div class="flex justify-between my-2">
+                    <div class="flex justify-between my-2 warning">
                         <span class="text-3xl font-bold mx-4">Warning</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Show All</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer" onclick="showAllDevices('all-device-warning-list')">Show All</span>
                     </div>
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2 warning">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Devices Warning List End -->
 
-                    <!-- Devices Warning List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <!-- Device Warning in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Devices List in Warning End-->
-                   
+                    <!-- <div class="border-b border-gray-200 w-full border-blue-200 mt-2"></div> -->
+
                     <!-- Devices List in Danger Start-->
-                    <div class="flex justify-between my-2">
+                    <div
+                        id="device-error" 
+                        class="flex justify-between my-2 error">
                         <span class="text-3xl font-bold mx-4">Error</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Show All</span>
+                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer" onclick="showAllDevices('all-device-error-list')">Show All</span>
                     </div>
-
-                    <!-- Devices Danger List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <!-- Device Danger in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2 error">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -323,7 +314,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+                        <div class="flex border shadow w-472 rounded-2lg m-2">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -345,71 +336,18 @@
                 </div>
                 <!-- Devices List End -->
             </div>
-            <!-- Body Content End -->
-        </div>
-        <!-- TABLET to DESKTOP VIEW END-->
+            <!-- All Device Status End -->
 
-        <!-- MOBILE VIEW START -->
-        <div class="md:hidden w-full h-full pt-16 bg-white">  
-            <!-- Header Content Start -->
-            <div class="relative flex space-x-2 pt-2 flex-col px-4">
-                <span class="text-5xl font-semibold text-blue-500 text-center">Devices</span>
-                <span class="text-sm mt-2 font-medium text-blue-500 text-center">List of Devices on the Platform</span>
-            </div>
-            <div class="border-b border-black w-full dark:border-dark-third border-blue-200 mt-2"></div>
-            <!-- Header Content End -->
 
-             <!-- Body Content Start -->
-             <div class="flex flex-col space-x-2 pt-4 h-131 bg-white">
-                <!-- Body Filter Start -->
-                <!-- <div class="flex flex-col rounded-3xl mx-2 py-4">
-                    <select 
-                        name="province" 
-                        id="province" 
-                        class="border-b border-black mx-4 my-2"
-                    >
-                        <option value="*" disabled selected>Province</option>
-                        <option value="Sumatra">Sumatra</option>
-                        <option value="Jawa">Jawa</option>
-                        <option value="Kalimantan">Kalimantan</option>
-                        <option value="Sulawesi">Sulawesi</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Nusa Tenggara">Nusa Tenggara</option>
-                    </select>
-                    <select 
-                        name="city" 
-                        id="city" 
-                        class="border-b border-black mx-4 my-2"
-                    >
-                        <option value="*" disabled selected>City</option>
-                        <option value="Sumatra">Sumatra</option>
-                        <option value="Jawa">Jawa</option>
-                        <option value="Kalimantan">Kalimantan</option>
-                        <option value="Sulawesi">Sulawesi</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Nusa Tenggara">Nusa Tenggara</option>
-                    </select>
-                    <div class="flex justify-end">
-                        <button class="bg-blue-500 rounded-lg flex mx-4 my-2 p-2">
-                            <i class='bx bx-plus-circle pl-2 my-auto text-lgl text-white'></i>
-                            <span class="text-center font-medium text-sm px-1 text-white">ADD</span>
-                        </button>
+            <!-- All Device Online List Start -->
+            <div id="all-device-online-list" class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white hidden">
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex justify-center my-2">
+                        <span class="text-3xl font-bold mx-4">Online Devices</span>
                     </div>
-                </div> -->
-                <!-- Body Filter End -->
-
-                <!-- Device List Start -->
-                <div class="flex flex-col h-auto">
-                    <!-- Devices List in Sumatra Start-->
-                    <div class="flex justify-between my-2">
-                        <span class="text-3xl font-bold mx-4">Sumatra</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Hide</span>
-                    </div>
-
-                    <!-- Devices List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <!-- Device Online in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+            
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2">
+                        <div id="deviceID1" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
@@ -418,228 +356,336 @@
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                    <span class="ml-2 font-normal">09 October 2022</span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
                                     <span class="ml-2 font-normal">POC Bank Lampung</span>
                                 </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
                             </div>
                         </div>
-
-                        <!-- Device Offline in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+            
+                        <div id="deviceID2" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Device Warning in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Device Danger in Sumatra -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/danger.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Devices List in Sumatra End-->
-
-                      <!-- Devices List in Jawa Start-->
-                      <div class="flex justify-between my-2">
-                        <span class="text-3xl font-bold mx-4">Jawa</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4">Hide</span>
-                    </div>
-
-                    <!-- Devices List Start -->
-                    <div class="flex flex-wrap border-2 border-black w-max justify-between rounded-2lg mx-2 px-2">
-                        <!-- Device Online in Jawa -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="text-xl font-semibold">IOT ES33W Wireless</span>
                                     <span class="bg-green-500 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                    <span class="ml-2 font-normal">01 Januari 2021</span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
                                     <span class="ml-2 font-normal">POC Bank Lampung</span>
                                 </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
                             </div>
                         </div>
-
-                        <!-- Device Offline in Jawa -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+            
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Jawa">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
+                                    <span class="text-xl font-semibold">EX-IOT ES33W Wireless</span>
+                                    <span class="bg-green-500 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                    <span class="ml-2 font-normal">11 Desember 2200</span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <span class="ml-2 font-normal">POC Bank Jawa</span>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Device Warning in Jawa -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
+            
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Kalimantan">
                             <img src="./images/logo/devices.png" class="w-1/4 h-full">
                             <div class="flex flex-col ml-2 mt-2 w-3/4">
                                 <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                    <span class="text-xl font-semibold">EX-IOT-WWW ES33W Wireless</span>
+                                    <span class="bg-green-500 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
+                                    <span class="ml-2 font-normal">09 Desember 2050</span>
                                 </div>
                                 <div class="flex my-1">
                                     <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
+                                    <span class="ml-2 font-normal">POC Bank Kalimantan</span>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Device Danger in Jawa -->
-                        <div class="flex border border-black w-472 rounded-2lg m-2">
-                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
-                            <div class="flex flex-col ml-2 mt-2 w-3/4">
-                                <div class="flex justify-between">
-                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
-                                    <img src="./images/icon/danger.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">10 October 2022</span>
-                                </div>
-                                <div class="flex my-1">
-                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
-                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
-                                </div>
-                                <div class="flex m-2 justify-end">
-                                    <img src="./images/icon/private.png" alt="Change To Private Device" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/unassigend.png" alt="Unassign Device to Customer" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/credentials.png" alt="Manage Credentials" class="w-5 h-auto mx-2 cursor-pointer">
-                                    <img src="./images/icon/trash.png" alt="Remove" class="w-5 h-auto mx-2 cursor-pointer">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Devices List in Jawa End-->
-
-                    <div class="flex justify-between mt-2">
-                        <span class="text-3xl font-bold mx-4">Problem</span>
-                        <span class="text-sm font-normal text-blue-100 mx-4 pr-2 pt-4 cursor-pointer hover:underline">Show</span>
                     </div>
                 </div>
-                <!-- Device List End -->
             </div>
-            <!-- Body Content End -->
+            <!-- All Device Online List End -->
+
+            <!-- All Device Offline List Start -->
+            <div id="all-device-offline-list" class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white hidden">
+                <!-- Devices List Start -->
+                <div class="flex flex-col mb-4 ">
+                    <!-- Devices List in Offline Start-->
+                    <div class="flex justify-center my-2">
+                        <span class="text-3xl font-bold mx-4">Offline Devices</span>
+                    </div>
+
+                    <!-- Devices Ofline List Start -->
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2">
+                        <div id="deviceID1" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID2" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES33W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">01 Januari 2021</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Jawa">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT ES33W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">11 Desember 2200</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Jawa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Kalimantan">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT-WWW ES33W Wireless</span>
+                                    <span class="bg-gray-400 w-8 h-8 rounded-full border-white border-2 mx-2"></span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 Desember 2050</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Kalimantan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Devices List in Ofline End-->
+                </div>
+                <!-- Devices List End -->
+            </div>
+            <!-- All Device Offline List End -->
+
+
+            <!-- All Device Warning List Start -->
+            <div id="all-device-warning-list" class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white hidden">
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex justify-center my-2">
+                        <span class="text-3xl font-bold mx-4">Warning Problem Devices</span>
+                    </div>
+
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2">
+                        <div id="deviceID1" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID2" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES33W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">01 Januari 2021</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Jawa">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT ES33W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">11 Desember 2200</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Jawa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Kalimantan">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT-WWW ES33W Wireless</span>
+                                    <img src="./images/icon/warning.png" alt="Warning Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 Desember 2050</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Kalimantan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Devices List End -->
+            </div>
+            <!-- All Device Warning List End -->
+
+
+            <!-- All Device Error List Start -->
+            <div id="all-device-error-list" class="flex flex-col space-x-2 pt-4 mt-4 h-auto bg-white hidden">
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex justify-center my-2">
+                        <span class="text-3xl font-bold mx-4">Danger Problem Devices</span>
+                    </div>
+
+                    <div class="flex flex-wrap w-max justify-between rounded-2lg mx-2 px-2">
+                        <div id="deviceID1" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES32W Wireless</span>
+                                    <img src="./images/icon/Danger.png" alt="Danger Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 October 2022</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID2" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Lampung">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">IOT ES33W Wireless</span>
+                                    <img src="./images/icon/Danger.png" alt="Danger Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">01 Januari 2021</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Lampung</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Jawa">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT ES33W Wireless</span>
+                                    <img src="./images/icon/Danger.png" alt="Danger Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">11 Desember 2200</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Jawa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deviceID3" class="flex border border-black w-472 rounded-2lg m-2 hover:bg-main-gray cursor-pointer" data-customer="POC Bank Kalimantan">
+                            <img src="./images/logo/devices.png" class="w-1/4 h-full">
+                            <div class="flex flex-col ml-2 mt-2 w-3/4">
+                                <div class="flex justify-between">
+                                    <span class="text-xl font-semibold">EX-IOT-WWW ES33W Wireless</span>
+                                    <img src="./images/icon/Danger.png" alt="Danger Device Problem" class="w-8 h-8 mx-2 cursor-pointer">
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/clock.png" alt="Time Installed" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">09 Desember 2050</span>
+                                </div>
+                                <div class="flex my-1">
+                                    <img src="./images/icon/assign.png" alt="Assign to Customer" class="w-5 h-5">
+                                    <span class="ml-2 font-normal">POC Bank Kalimantan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Devices List End -->
+            </div>
+            <!-- All Device Error List End -->
 
         </div>
-        <!-- MOBILE VIEW END -->
+        <!-- TABLET to DESKTOP VIEW END-->
+    </div>
+    <!-- Main Content End -->
 
-      </div>
-      <!-- Main Content End -->
-      
     <!-- Javascript -->
     <script src="./js/app.js"></script>
     <script src="./js/show.js"></script>
-    <script src="./js/customer.js"></script>
+    <script src="./js/device.js"></script>
+    <!-- <script src="./js/customer.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+</body>
+
 </html>
- 

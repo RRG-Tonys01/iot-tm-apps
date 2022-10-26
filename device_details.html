@@ -3,129 +3,456 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tangara Media</title>
+    <title>IOT Application</title>
 
     <link rel="shortcut icon" href="./images/logo/tm_logo.png" type="image/png" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Import Libaray -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
-  <body class="bg-main-gray dark:bg-dark-main">
-        <!-- Navbar Header Start -->
-        <nav class="bg-blue-sky dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 dark:border-dark-third">
-            <!-- Navbar Header Left Content Start-->
-            <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 my-2">
-            <!-- Logo Start -->
-            <a href="index.html" class="mr-2 hidden md:inline-block pl-16">
-                <img src="./images/logo/iotTM_white.png" alt="IOT TM Loogo" class="w-24 sm:w-20 lg:w-24 h-auto"/>
+  <body class="bg-main-gray">
+    <!-- Navbar Header Start -->
+    <nav 
+        class="bg-blue-sky h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50">
+        <!-- Navbar Left Start -->
+        <div class="flex items-center justify-between w-full md:w-max px-4 py-2">
+            <a href="#" class="mr-2 hidden md:inline-block pl-16">
+                <img src="./images/logo/iotTM_white.png" alt="Tangara logo" class="w-24 sm:w-20 lg:w-24 h-auto"/>
             </a>
-            <a href="index.html" class="inline-block md:hidden">
-                <img src="./images/logo/iotTM_white.png" alt="IOT TM Logo" class="w-32 h-auto" />
-            </a>
-            <!-- Logo End -->
-            </div>
-            <!-- Navbar Header Left Content End-->
 
-            <!-- Navbar Header Right Content Start-->
-            <ul class="hidden md:flex mx-4 items-center justify-center">
-            <li>
-                <div class="text-xl hidden xl:grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full  p-3 cursor-pointer hover:bg-gray-300 relative">
-                <i class="bx bx-search"></i>
+            <!-- Mobile Nav Header Start -->
+            <a href="#" class="inline-block md:hidden">
+                <i class="bx bx-menu"></i>
+            </a>
+            <div class="flex items-center justify-between space-x-1 md:hidden">
+                <div class="relative px-2 py-2 w-10 h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-10 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center justify-center cursor-pointer">
+                <i class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"></i>
+                <input type="text" placeholder="Search Facebook" class="outline-none bg-transparent hidden xl:inline-block"/>
                 </div>
-            </li>  
+                <div class="text-2xl grid place-items-center md:hidden rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt relative">
+                <i class="bx bx-bell"></i>
+                <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">2</span>
+                </div>
+            </div>
+            <!-- Mobile Nav Header Start -->
+        </div>
+        <!-- Navbar Left End -->
+
+        <!-- Navbar Right Start -->
+        <ul class="hidden md:flex mx-4 items-center justify-center">
             <li>
-                <div class="text-xl grid place-items-center dark:bg-dark-third dark:hover:bg-dark-fourth dark:text-dark-txt rounded-full p-3 cursor-pointer hover:bg-gray-300 relative">
+            <div
+                id="nav-right-search" 
+                class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative" 
+            >
+                <i class="bx bx-search-alt-2"></i>
+            </div>
+            </li>
+
+            <li>
+            <div class="text-xl grid place-items-center rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
                 <i class="bx bx-bell"></i>
                 <span class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center">9+</span>
-                </div>
+            </div>
             </li>
             <li class="h-full hidden xl:flex">
-                <a href="profile.html" class="inline-flex items-center justify-center p-1 rounded-full dark:hover:bg-dark-third mx-2">
+            <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
                 <img src="./images/user/rrg.jpg" alt="Profile picture" class="rounded-full h-7 w-7"/>
+            </a>
+            </li>
+        </ul>
+        <!-- Navbar Right End -->
+    </nav>
+    <!-- Navbar Header End -->
+
+    <!-- Main Content Start -->
+    <div class="flex lg:justify-center h-screen">
+    <!-- Left Content Start-->
+    <div 
+        class="w-1/5 pt-16 h-full hidden xl:flex flex-col fixed top-0 left-0 bg-blue-sky" id="left-content">
+        <ul class="py-4 pl-4">
+            <li class="my-2">
+                <a 
+                    href="index.html" 
+                    class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all"
+                >
+                    <img src="./images/icon/dashboard.png" alt="Friend Icon" class="w-10 h-10"/>
+                    <span class="font-semibold">Dashboard</span>
                 </a>
             </li>
-            </ul>
-            <!-- Navbar Header Right Content End-->
-        </nav>
-        <!-- NAVBAR END -->
+            <li class="my-2">
+                <a 
+                    href="customer.html" 
+                    class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all"
+                >
+                    <img src="./images/icon/customer.png" alt="Group Icon" class="w-10 h-10"/>
+                    <span class="font-semibold">Customers</span>
+                </a>
+            </li>
+            <li class="my-2">
+                <a 
+                    href="device.html" 
+                    class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all"
+                >
+                <img src="./images/icon/devices.png" alt="Profile picture" class="w-10 h-10"/>
+                <div class="font-semibold">Devices</div> 
+                </a>
+            </li>
+            <li class="my-2">
+                <a href="entity.html" class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all">
+                <img src="./images/icon/entity.png" alt="Profile picture" class="w-10 h-10 rounded-full"/>
+                <span class="font-semibold">Entity</span>
+                </a>
+            </li>
+        </ul>
 
-       
-
-        <!-- Main Content Start -->
-        <div class="flex lg:justify-center h-screen">
-            <!-- Left Content Start-->
-            <div 
-                id="left-content"
-                class="w-1/5 pt-16 h-full hidden xl:flex flex-col relative top-0 left-0 bg-blue-sky shadow" 
-            >
-                <ul class="py-4 pl-4">
-                    <li>
-                        <a 
-                            href="index.html" 
-                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
-                        >
-                            <img src="./images/icon/dashboard.png" alt="Dashboard" class="w-10 h-10"/>
-                            <span class="font-semibold text-white text-xl">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="customer.html" 
-                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
-                        >
-                            <img src="./images/icon/customer.png" alt="Customer" class="w-10 h-10"/>
-                            <span class="font-semibold text-white text-xl">Customers</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="device.html" 
-                            class="flex items-center space-x-2 p-2 bg-main-gray hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
-                        >
-                            <img src="./images/icon/devices.png" alt="Devices" class="w-10 h-10"/>
-                            <div class="font-semibold text-white text-xl">Devices</div> 
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="#" 
-                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                            <img src="./images/icon/entity.png" alt="Entity" class="w-10 h-10"/>
-                            <span class="font-semibold text-white text-xl">Entity</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="#" 
-                            class="flex items-center space-x-2 p-2 hover:bg-main-gray rounded-left-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third">
-                            <img src="./images/icon/sensor.png" alt="Sensor" class="w-10 h-10"/>
-                            <span class="font-semibold text-white text-xl">Sensor</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Left Content End -->
-            
-            <!-- Middle Content Start -->
-            <div 
-                class="w-4/5 lg:w-2/3 xl:w-4/5 pt-32 lg:pt-16 lg:pr-16 xl:pr-8 px-2 right-0 overflow-y-scroll scrollbar-style-none" 
-                id="body-content-desktop-view"
-            >
-               <div class="bg-white w-1/3 mt-4 ml-4 items-center">
-                    <div class="flex flex-col">
-                        <img src="./images/logo/tm_logo.png" class="w-32 h-32">
-                        <img src="./images/assets/device.png" class="w-1/2 h-32 ">
-                    </div>
-                    <!-- <img src="./images/assets/iot_gateway.png" class="w-full h-1/2 py-2 justify center"> -->
-               </div>
-            </div>
-            <!-- Middle Content End -->
+        <div class="mt-auto p-6 text-sm text-gray-500 dark:text-dark-txt">
+        <a href="#">Privacy</a>
+        <span>.</span>
+        <a href="#">Terms</a>
+        <span>.</span>
+        <a href="#">Advertising</a>
+        <span>.</span>
+        <a href="#">Ad Choices</a>
+        <span>.</span>
+        <a href="#">Cookies</a>
+        <span>.</span>
+        <a href="#">More</a>
+        <span>.</span>
+        <span>TM © 2022</span>
         </div>
-        <!-- Main Content End -->
+    </div>
+    <!-- Left Content End -->
+
+
+    <!-- TABLET to DESKTOP VIEW START-->
+    <div 
+        id="main-bdy-desktop-view"
+        class="w-4/5 hidden md:block md:w-full pt-16 px-5 h-full absolute top-0 lg:left-1/5 overflow-y-scroll scrollbar-width-none"
+    >
+        <!-- Device Details Start -->
+        <div class="flex">
+            <div class="flex bg-white w-1/3 mt-4 ml-4 items-center">
+                <div class="flex flex-col">
+                    <img src="./images/logo/tm_logo.png" class="w-32 h-32">
+                    <img src="./images/assets/device.png" class="w-1/2 h-auto justify-center mx-auto">
+                    <span class="text-3xl font-bold justify-center mx-auto">IOT ES32W Wireless</span>
+                    <div class="flex justify-center my-4">
+                        <img src="./images/icon/sensor/back_door.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer">
+                        <img src="./images/icon/sensor/people_counter.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer opacity-50">
+                        <img src="./images/icon/sensor/IR_Remote.png" alt="Manager Device" class="w-7 h-7 mx-2 cursor-pointer opacity-50">
+                        <img src="./images/icon/sensor/room_temp_humi.png" alt="User Dashboard" class="w-7 h-7 mx-2 cursor-pointer">
+                        <img src="./images/icon/sensor/vibration.png" alt="Remove" class="w-7 h-7 mx-2 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-col w-2/3 mt-4 ml-4 items-center">
+                <div class="flex">
+                    <div
+                        id="device-detail-header" 
+                        class="w-64 p-2 bg-gray-100 mx-2 rounded-lg cursor-pointer hover:bg-gray-100">
+                        <span class="text-xl font-medium px-4">Detail</span>
+                    </div>
+                    <div
+                        id="device-customer-header"  
+                        class="w-64 p-2 bg-blue-100 mx-2 rounded-lg cursor-pointer hover:bg-gray-100">
+                        <span class="text-xl font-medium px-4">Customer</span>
+                    </div>
+                </div>
+                <div 
+                    id="device-detail-body"
+                    class="flex flex-col bg-white w-full my-4 mx-2 px-4 pt-2 pb-4"
+                >
+                    <span class="text-lg font-semibold my-1">Device ID</span>
+                    <span class="text-sm font-normal">867f4240-09e1-11ea-b372-9ff9b7a7b54e</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Token</span>
+                    <span class="text-sm font-normal">POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Name</span>
+                    <span class="text-sm font-normal">Device POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Name</span>
+                    <span class="text-sm font-normal">Device POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                </div>
+                <div 
+                    id="device-customer-body"
+                    class="flex flex-col bg-white w-full my-4 mx-2 px-4 pt-2 pb-4 hidden"
+                >
+                    <span class="text-lg font-semibold my-1">Device Customer</span>
+                    <span class="text-sm font-normal">POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Location</span>
+                    <span class="text-sm font-normal">Jl. Warning Kenangan Bersama No. 17 </span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Location</span>
+                    <span class="text-sm font-normal">Jl. Warning Kenangan Bersama No. 17 </span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Connection</span>
+                    <div class="flex">
+                        <span class="bg-green-500 w-7 h-7 rounded-full border-white border-2 mr-2"></span>
+                        <span class="text-sm font-normal my-auto">Device POC Bank Lampung</span>
+                    </div>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Device Details Start -->
+
+        <!-- Device Condition Start -->
+        <div class="flex h-332 my-4 mx-4">
+            <!-- Battery Status -->
+            <div class="flex flex-col bg-blue-800 w-1/3 h-full">
+                <div class="flex justify-center px-4 my-4">
+                    <span class="text-2xl font-bold mx-2 text-white">Battery Status :</span>
+                    <span class="text-2xl font-bold mx-2 text-white">100%</span>
+                </div>
+                <div class="flex h-1/2 my-2 justify-center">
+                    <div class="flex border-2 h-full border-black rounded-lg my-2 ml-4 w-3/4 py-1">
+                        <div class="w-1/4 bg-green-500 ml-2 opacity-0 animation:charge-1"></div>
+                        <div class="w-1/4 bg-green-500 mx-1 opacity-0 animation:charge-2"></div>
+                        <div class="w-1/4 bg-green-500 mr-1 opacity-0 animation:charge-3"></div>
+                        <div class="w-1/4 bg-green-500 mr-2 opacity-0 animation:charge-4"></div>
+                    </div>
+                    <div class="w-5 h-10 bg-black my-auto"></div>
+                </div>
+                <span class="text-2xl font-bold text-center text-white mt-4">Date Installed :</span>
+                <span class="text-2xl font-bold text-center text-white mb-2">10 Oktober 2022</span>
+            </div>
+
+            <!-- AC Relay Status -->
+            <div class="flex flex-col bg-green-800 w-1/3 h-full mx-4">
+                <div class="flex justify-center px-4 my-4">
+                    <span class="text-3xl font-bold text-white">AC Load Relay</span>
+                </div>
+                <div 
+                    id="ac-relay-toggle"
+                    class="bg-main-gray h-1/2 rounded-2lg mx-4 mt-4 cursor-pointer"
+                >
+                    <div 
+                        id="ac-relay-off"
+                        class="flex flex-col justify-center w-1/2 bg-red-500 rounded-lg float-left h-full hidden"
+                    >
+                        <span class=" text-5xl font-semibold text-center text-white items-center">OFF</span>
+                    </div>
+                    <div
+                        id="ac-relay-on" 
+                        class="flex flex-col justify-center w-1/2 bg-blue-500 rounded-lg float-right h-full"
+                    >
+                        <span class=" text-5xl font-semibold text-center text-white">ON</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DC Relay Status -->
+            <div class="flex flex-col bg-yellow-800 w-1/3 h-full">
+                <div class="flex justify-center px-4 my-4">
+                    <span class="text-3xl font-bold text-white">DC Load Relay</span>
+                </div>
+                <div 
+                    id="dc-relay-toggle"
+                    class="bg-main-gray h-1/2 rounded-2lg mx-4 mt-4 cursor-pointer">
+                    <div 
+                        id="dc-relay-off"
+                        class="flex flex-col justify-center w-1/2 bg-red-500 rounded-lg float-left h-full"
+                    >
+                        <span class=" text-5xl font-semibold text-center text-white items-center">OFF</span>
+                    </div>
+                    <div 
+                        id="dc-relay-on"
+                        class="flex flex-col justify-center w-1/2 bg-blue-500 rounded-lg float-right h-full hidden"
+                    >
+                        <span class=" text-5xl font-semibold text-center text-white">ON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Device Condition End -->
+
+        <!-- Device Status Start -->
+        <div class="flex flex-col mt-auto ml-4">
+            <div class="flex my-2">
+                <div class="flex justify-center bg-white rounded-xl mr-2 p-2 w-24 cursor-pointer hover:bg-gray-100">
+                    <span class="text-lg font-medium text-center hover:text-black">Sensor</span>
+                </div>
+                <div class="flex justify-center bg-red-100 rounded-xl mx-2 p-2 w-24 cursor-pointer hover:bg-gray-100">
+                    <span class="text-white text-lg font-medium text-center hover:text-black">Graphic</span>
+                </div>
+                <!-- <div class="flex justify-center bg-red-100 rounded-xl mx-2 p-2 w-24 cursor-pointer hover:bg-gray-100 hover:text-black">
+                    <span class="text-white text-lg font-medium text-center">Rule</span>
+                </div> -->
+                <div class="flex justify-center bg-red-100 rounded-xl mx-2 p-2 w-24 cursor-pointer hover:bg-gray-100 ">
+                    <span class="text-white text-lg font-medium text-center hover:text-black">Problem</span>
+                </div>
+            </div>
+            
+            <!-- Sensor Status Start -->
+            <div 
+                id="device-status-sensor"
+                class="flex flex-1 flex-wrap justify-center px-2 py-2 my-4 bg-white h-626 w-full"
+            >
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+                <div class="flex mx-2 my-4 border border-black rounded-2lg w-1/4 h-110">
+                    <img src="./images/icon/sensor/back_door.png" alt="" class="w-1/3 h-full bg-red-500 rounded-left-lg p-2">
+                    <div class="flex flex-col w-2/3 items-center mt-2 mx-2">
+                        <span class="text-xl font-bold">Back Door</span>
+                        <span class="text-2xl font-semibold my-2">OFF</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Sensor Status End -->
+
+            <!-- Graphic Status Start -->
+            <div 
+                id="device-status-graphic"
+                class="flex flex-1 flex-wrap justify-center px-2 py-2 my-4 bg-white h-626 w-full hidden"
+            >
+                
+            </div>
+            <!-- Graphic Status End -->
+            
+            <!-- Problem Status Start -->
+            <div 
+                id="device-status-problem"
+                class="flex flex-1 flex-wrap justify-center px-2 py-2 my-4 bg-white h-626 w-full hidden"
+            >
+                
+            </div>
+            <!-- Problem Status End -->
+        </div>
+        <!-- Device Status End -->
+
+        <!-- Device Telemetry,Attributes,Alarms Start-->
+        <div class="flex flex-col mt-auto ml-4">
+            <div class="flex my-2">
+                <div class="flex justify-center bg-white rounded-xl mr-2 p-2 w-24">
+                    <span class="text-lg font-medium text-center">Telemetry</span>
+                </div>
+                <div class="flex justify-center bg-red-100 rounded-xl mx-2 p-2 w-24">
+                    <span class="text-white text-lg font-medium text-center">Attributes</span>
+                </div>
+                <div class="flex justify-center bg-red-100 rounded-xl mx-2 p-2 w-24">
+                    <span class="text-white text-lg font-medium text-center">Alarms</span>
+                </div>
+            </div>
+
+            <div class="flex flex-1 flex-wrap justify-center px-2 py-2 my-4 bg-white h-626 w-full">
+                <span class="flex-col justify-center text-5l text-center font-bold">DATA TABLES</span>
+            </div>
+        </div>
+        <!-- Device Telemetry,Attributes,Alarms End-->
+    </div>
+    <!-- TABLET to DESKTOP VIEW END-->
+
+    <!-- MOBILE VIEW START -->
+    <div class="md:hidden w-full h-full pt-16 bg-white">
+            <!-- Device Details Start -->
+            <div class="flex">
+            <div class="flex bg-white w-1/3 mt-4 ml-4 items-center">
+                <div class="flex flex-col">
+                    <img src="./images/logo/tm_logo.png" class="w-32 h-32">
+                    <img src="./images/assets/device.png" class="w-1/2 h-auto justify-center mx-auto">
+                    <span class="text-3xl font-bold justify-center mx-auto">IOT ES32W Wireless</span>
+                    <div class="flex justify-center my-4">
+                        <img src="./images/icon/sensor/back_door.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer">
+                        <img src="./images/icon/sensor/people_counter.png" alt="Manager User" class="w-7 h-7 mx-2 cursor-pointer opacity-50">
+                        <img src="./images/icon/sensor/IR_Remote.png" alt="Manager Device" class="w-7 h-7 mx-2 cursor-pointer opacity-50">
+                        <img src="./images/icon/sensor/room_temp_humi.png" alt="User Dashboard" class="w-7 h-7 mx-2 cursor-pointer">
+                        <img src="./images/icon/sensor/vibration.png" alt="Remove" class="w-7 h-7 mx-2 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-col w-2/3 mt-4 ml-4 items-center">
+                <div class="flex">
+                    <div class="w-64 p-2 bg-white mx-2 rounded-lg">
+                        <span class="text-xl font-medium px-4">Detail</span>
+                    </div>
+                    <div class="w-64 p-2 bg-blue-100 mx-2 rounded-lg">
+                        <span class="text-xl font-medium px-4">Customer</span>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-white w-full my-4 mx-2 px-4 pt-2 pb-4">
+                    <span class="text-lg font-semibold my-1">Device ID</span>
+                    <span class="text-sm font-normal">867f4240-09e1-11ea-b372-9ff9b7a7b54e</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Token</span>
+                    <span class="text-sm font-normal">POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                    <span class="text-lg font-semibold my-1">Device Name</span>
+                    <span class="text-sm font-normal">Device POC Bank Lampung</span>
+                    <div class="border-b border-black dark:border-dark-third border-dash"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Device Details Start -->
+
+    </div>
+    <!-- MOBILE VIEW END -->
+
+    </div>
+    <!-- Main Content End -->
       
-      
-        <!-- Javascript -->
-        <script src="./js/app.js"></script>
-        <script src="./js/show.js"></script>
+
+    <!-- Javascript -->
+    <script src="./js/app.js"></script>
+    <script src="./js/show.js"></script>
+    <script src="./js/device_detail.js"></script>
+    <!-- <script src="./js/customer.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
+ 

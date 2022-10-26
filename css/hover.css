@@ -53,4 +53,9 @@
     --tw-bg-opacity: 1;
     color: rgba(59, 130, 246, var(--tw-bg-opacity));
 }
+
+.hover\:text-black:hover {
+    --tw-bg-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
 /* Hover Text End */
